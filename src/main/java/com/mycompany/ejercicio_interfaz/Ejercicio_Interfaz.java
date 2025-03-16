@@ -21,6 +21,11 @@ import ImplementsClass.Diseñador;
 import ImplementsClass.Desarrollador;
 import Service.IInterfazOrdenable;
 import ImplementsClass.ListaNumeros;
+import Service.IInterfazAlimentacion;
+import ImplementsClass.Persona;
+import ImplementsClass.Animal;
+
+
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -63,8 +68,16 @@ public class Ejercicio_Interfaz {
 //        disenador.trabajar();
 //        desarrolador.trabajar();
 
-        IInterfazOrdenable listarnumero = new ListaNumeros(Arrays.asList(5, 3, 8, 1, 2));
-        listarnumero.ordenar();
+//        IInterfazOrdenable listarnumero = new ListaNumeros(Arrays.asList(5, 3, 8, 1, 2));
+//        listarnumero.ordenar();
+        
+
+        IInterfazAlimentacion persona =new Persona();
+        IInterfazAlimentacion animal =new Animal();
+//        persona.comer();
+//        animal.comer();
+
         
     }
 }
+
