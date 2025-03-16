@@ -19,6 +19,12 @@ import ImplementsClass.Rectangulo;
 import Service.IInterfazTrabajador;
 import ImplementsClass.Diseñador;
 import ImplementsClass.Desarrollador;
+import Service.IInterfazOrdenable;
+import ImplementsClass.ListaNumeros;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 
 public class Ejercicio_Interfaz {
@@ -57,8 +63,8 @@ public class Ejercicio_Interfaz {
 //        disenador.trabajar();
 //        desarrolador.trabajar();
 
-
-    
+        IInterfazOrdenable listarnumero = new ListaNumeros(Arrays.asList(5, 3, 8, 1, 2));
+        listarnumero.ordenar();
         
     }
 }
