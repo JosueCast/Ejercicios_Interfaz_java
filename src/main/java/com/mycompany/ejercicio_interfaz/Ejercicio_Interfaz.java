@@ -30,6 +30,8 @@ import ImplementsClass.Sms;
 import Service.IInterfazDescontable;
 import ImplementsClass.DescuentoFijo;
 import ImplementsClass.DescuentoPorcentaje;
+import ImplementsClass.Producto;
+import Service.IInterfazComparableObjeto;
 
 
 import java.util.Arrays;
@@ -95,7 +97,22 @@ public class Ejercicio_Interfaz {
 //        System.out.println("Precio con 10% de descuento: $" + porcetaje.calcularDescuento(precioOriginal));        
 //        System.out.println("Precio con descuento fijo de $15: $" + fijo.calcularDescuento(precioOriginal));
 //        
+        
+// Crear instancias de Producto
+        IInterfazComparableObjeto producto1 = new Producto(100.50);
+        IInterfazComparableObjeto producto2 = new Producto(150.75);
 
+        // Comparar los productos
+        int resultado = producto1.comparar(producto2);
+
+        // Mostrar el resultado de la comparación
+        if (resultado < 0) {
+            System.out.println("Producto 1 es más barato que Producto 2");
+        } else if (resultado > 0) {
+            System.out.println("Producto 1 es más caro que Producto 2");
+        } else {
+            System.out.println("Producto 1 y Producto 2 tienen el mismo precio");
+        }
 
         
 
