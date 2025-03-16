@@ -27,7 +27,9 @@ import ImplementsClass.Animal;
 import Service.IInterfazNotificacion;
 import ImplementsClass.CorreoElectronico;
 import ImplementsClass.Sms;
-
+import Service.IInterfazDescontable;
+import ImplementsClass.DescuentoFijo;
+import ImplementsClass.DescuentoPorcentaje;
 
 
 import java.util.Arrays;
@@ -83,9 +85,21 @@ public class Ejercicio_Interfaz {
 
           IInterfazNotificacion correo =new CorreoElectronico();
           IInterfazNotificacion sms =new Sms();
-          correo.enviarNotificacion();
-          sms.enviarNotificacion();
+//          correo.enviarNotificacion();
+//          sms.enviarNotificacion();
+
+        IInterfazDescontable porcetaje = new DescuentoPorcentaje(10);
+        IInterfazDescontable fijo = new DescuentoFijo(15);
+//         double precioOriginal = 100.0;
+//
+//        System.out.println("Precio con 10% de descuento: $" + porcetaje.calcularDescuento(precioOriginal));        
+//        System.out.println("Precio con descuento fijo de $15: $" + fijo.calcularDescuento(precioOriginal));
+//        
+
+
         
+
+
     }
 }
 
