@@ -13,11 +13,11 @@ import ImplementsClass.Bicicleta;
 import Service.IInterfazPago;
 import ImplementsClass.PagoConTarjeta;
 import ImplementsClass.PagoConEfectivo;
+import Service.IInterfazFiguraGeometrica;
+import ImplementsClass.Circulo;
+import ImplementsClass.Rectangulo;
 
-/**
- *
- * @author Darkslayer
- */
+
 public class Ejercicio_Interfaz {
 
     public static void main(String[] args) {
@@ -39,8 +39,14 @@ public class Ejercicio_Interfaz {
         IInterfazPago pagoConTarjeta = new PagoConTarjeta();
         IInterfazPago pagoConEfectivo = new PagoConEfectivo();
         
-        pagoConTarjeta.procesarPago(2);
-        pagoConEfectivo.procesarPago(10);
+//        pagoConTarjeta.procesarPago(2);
+//        pagoConEfectivo.procesarPago(10);
+
+        IInterfazFiguraGeometrica circulo = new Circulo(5);
+        IInterfazFiguraGeometrica rectangulo = new Rectangulo(4, 6);
+
+//        System.out.println("Circulo - Area: " + circulo.area() + ", Perimetro: " + circulo.perimetro());
+//        System.out.println("Rectangulo - Area: " + rectangulo.area() + ", Perimetro: " + rectangulo.perimetro());
 
         
     }
