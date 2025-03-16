@@ -24,6 +24,9 @@ import ImplementsClass.ListaNumeros;
 import Service.IInterfazAlimentacion;
 import ImplementsClass.Persona;
 import ImplementsClass.Animal;
+import Service.IInterfazNotificacion;
+import ImplementsClass.CorreoElectronico;
+import ImplementsClass.Sms;
 
 
 
@@ -77,6 +80,11 @@ public class Ejercicio_Interfaz {
 //        persona.comer();
 //        animal.comer();
 
+
+          IInterfazNotificacion correo =new CorreoElectronico();
+          IInterfazNotificacion sms =new Sms();
+          correo.enviarNotificacion();
+          sms.enviarNotificacion();
         
     }
 }
