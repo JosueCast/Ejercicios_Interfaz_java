@@ -16,6 +16,9 @@ import ImplementsClass.PagoConEfectivo;
 import Service.IInterfazFiguraGeometrica;
 import ImplementsClass.Circulo;
 import ImplementsClass.Rectangulo;
+import Service.IInterfazTrabajador;
+import ImplementsClass.Diseñador;
+import ImplementsClass.Desarrollador;
 
 
 public class Ejercicio_Interfaz {
@@ -47,7 +50,15 @@ public class Ejercicio_Interfaz {
 
 //        System.out.println("Circulo - Area: " + circulo.area() + ", Perimetro: " + circulo.perimetro());
 //        System.out.println("Rectangulo - Area: " + rectangulo.area() + ", Perimetro: " + rectangulo.perimetro());
+        
+        IInterfazTrabajador disenador = new Diseñador();
+        IInterfazTrabajador desarrolador = new Desarrollador();
+        
+//        disenador.trabajar();
+//        desarrolador.trabajar();
 
+
+    
         
     }
 }
