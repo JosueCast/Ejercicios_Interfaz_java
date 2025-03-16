@@ -10,6 +10,9 @@ import ImplementsClass.Gato;
 import Service.IInterfazVehiculo;
 import ImplementsClass.Coche;
 import ImplementsClass.Bicicleta;
+import Service.IInterfazPago;
+import ImplementsClass.PagoConTarjeta;
+import ImplementsClass.PagoConEfectivo;
 
 /**
  *
@@ -28,10 +31,16 @@ public class Ejercicio_Interfaz {
 
         IInterfazVehiculo coche = new Coche();
         IInterfazVehiculo bicicleta = new Bicicleta();
-        coche.arrancar();
-        bicicleta.detener();
+//        Prueba de la InterfazVehiculo
+//        coche.arrancar();
+//        bicicleta.detener();
         
+
+        IInterfazPago pagoConTarjeta = new PagoConTarjeta();
+        IInterfazPago pagoConEfectivo = new PagoConEfectivo();
         
+        pagoConTarjeta.procesarPago(2);
+        pagoConEfectivo.procesarPago(10);
 
         
     }
