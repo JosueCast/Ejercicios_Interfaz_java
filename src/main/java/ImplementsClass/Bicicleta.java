@@ -4,20 +4,22 @@
  */
 package ImplementsClass;
 
-import Service.IInterfazAnimal;
+import Service.IInterfazVehiculo;
 
 /**
  *
  * @author Darkslayer
  */
-public class Perro implements IInterfazAnimal {
+public class Bicicleta implements IInterfazVehiculo {
+
+    
     @Override
-     public void hacerSonido() {
-        System.out.println("El perro ladra: Guau Guau!");
+     public void arrancar() {
+        System.out.println("La bicicleta empieza a moverse.");
     }
      @Override
-    public void mover() {
-        System.out.println("El perro corre.");
+    public void detener() {
+        System.out.println("La bicicleta se detiene.");
     }
     
 }
